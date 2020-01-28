@@ -1,0 +1,62 @@
+#include <iostream>
+using namespace std;
+
+
+int main() {
+
+    int king;
+    int queen;
+    int rook;
+    int bishop;
+    int knight;
+    int pawn;
+
+    int kingsNeeded = 0;
+    int queensNeeded = 0;
+    int rooksNeeded = 0;
+    int bishopsNeeded = 0;
+    int knightsNeeded = 0;
+    int pawnsNeeded = 0;
+
+    cin >> king >> queen >> rook >> bishop >> knight >> pawn;
+
+
+        if (king == 0)
+            kingsNeeded = 1;
+        else
+            kingsNeeded = 1 - king;
+
+
+
+        if (queen == 0)
+            queensNeeded = 1;
+        else
+            queensNeeded = 1 - queen;
+
+        if (rook == 0)
+            kingsNeeded = 2;
+        else
+            kingsNeeded = 2 - rook;
+
+        if (bishop == 0)
+            bishopsNeeded = 2;
+        else
+            bishopsNeeded = 2 - bishop;
+
+        if (knight == 0)
+            knightsNeeded = 2;
+        else
+            knightsNeeded = 2 - knight;
+
+        if (pawn == 0)
+            pawnsNeeded = 8;
+        else
+            pawnsNeeded = 8 - pawn;
+
+
+    cout << kingsNeeded << queensNeeded << rooksNeeded << bishopsNeeded << knightsNeeded << pawnsNeeded;
+
+
+
+    return 0;
+}
