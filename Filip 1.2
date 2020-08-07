@@ -1,0 +1,31 @@
+
+
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+    
+    //Variables
+    string in1, in2;
+    int output1, output2;
+    
+    
+    cin >> in1 >> in2;
+    
+    //reverses order
+    swap(in1[0], in1[2]);
+    swap(in1[0], in2[2]);
+    
+    //conversion to ints
+    output1 = stoi(in1);
+    output2 = stoi(in2);
+    
+    //results
+    if (output1 > output2)
+        cout << output1 << endl;
+    else
+        cout << output2;
+        
+    return 0;
+}
